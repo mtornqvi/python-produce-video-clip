@@ -1,0 +1,6 @@
+# Project dependencies
+# Add packages with `pip install <package>` and pin them with:
+#   python -m pip freeze > requirements.txt
+python-dotenv>=1.0
+moviepy>=2.0
+Pillow>=11.0
