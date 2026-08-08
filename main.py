@@ -104,7 +104,7 @@ def build_video(
     print(f"Audio duration: {audio_clip.duration:.2f}s, video duration: {clip.duration:.2f}s")
     if audio_clip.duration > clip.duration:
         print("Trimming audio to match video duration...")
-        audio_clip = audio_clip.subclip(0, clip.duration)
+        audio_clip = audio_clip.subclipped(0, clip.duration)
 
     final_clip = clip.with_audio(audio_clip)
     print(f"Writing output file: {output_file}")
